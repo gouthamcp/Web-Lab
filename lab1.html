@@ -1,0 +1,122 @@
+<!--Javascript calculator to perform
+SUM, MUL, DIV, ADD
+-->
+<!DOCTYPE html>
+<html>
+<head><title>Lab Pgm 1</title>
+    <style>
+        
+         .title{
+             border-radius: 30px;
+             margin-bottom: 25px;
+             text-align: center;
+             width: 300px;
+             color: papayawhip;
+             background-color:brown;
+             border:solid black 1px;
+         }
+         input[type="text"]{
+             border-radius: 5px;
+             text-align: right;
+             background-color: white;
+             width: 94%;
+         }
+        input[type="button"]{
+            border-radius: 5px;
+            background-color:blue;
+            color: papayawhip;
+            border-color: black;
+            width: auto;
+        }
+    </style>
+    <script>
+          function disp(val){
+              document.getElementById('sdm').value+=val;
+
+          }
+          function clr(){
+              document.getElementById('sdm').value=" ";
+          }
+
+          function solve(){
+             let x= document.getElementById('sdm').value;
+             let y=eval(x);
+             document.getElementById("sdm").value=y
+          }
+    </script>
+</head>
+<body>
+    <div class="title"><h1> Goutham's Advanced Lite Calculator</h1></div>
+<!--Ceate a table-->
+ <table border="25" style="padding: 1%;">
+  
+    <tr>
+        <td>
+            <input type="button" value="CE" onclick="clr()">
+        </td>
+        <td colspan="19">
+            <input type="text" id="sdm">
+        </td>
+    </tr>
+    <!-- creating buttons and assign values to it-->
+    <tr>
+        <td>
+            <input type="button" value="+" onclick="disp('+')">
+        </td>
+        <td>
+            <input type="button" value="1" onclick="disp('1')" >
+        </td>
+        <td>
+            <input type="button" value="2" onclick="disp('2')">
+        </td>
+        <td>
+            <input type="button" value="3" onclick="disp('3')">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="-" onclick="disp('-')">
+        </td>
+        <td>
+            <input type="button" value="4" onclick="disp('4')">
+        </td>
+        <td>
+            <input type="button" value="5" onclick="disp('5')">
+        </td>
+        <td>
+            <input type="button" value="6" onclick="disp('6')">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="*" onclick="disp('*')">
+        </td>
+        <td>
+            <input type="button" value="7" onclick="disp('7')">
+        </td>
+        <td>
+            <input type="button" value="8"onclick="disp('8')">
+        </td>
+        <td>
+            <input type="button" value="9" onclick="disp('9')">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="/" onclick="disp('/')">
+        </td>
+        <td>
+            <input type="button" value="." onclick="disp('.')">
+        </td>
+        <td>
+            <input type="button" value="0" onclick="disp('0')">
+        </td>
+        <td>
+            <input type="button" value="=" onclick="solve()"  >
+        </td>
+    </tr>
+ </table>
+ <p>GOUTHAM CP - 4SU17CS021</p>
+
+</body>
+</html>
