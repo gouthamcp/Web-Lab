@@ -1,0 +1,57 @@
+<!--JS to TEXT-GROWING/TEXT-SHRINKING
+TEXT-GROWING--increase font size in intervals of
+100ms- red color
+50pt--TEXT-SHRINKING upto 5pt-- BLue color
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS TEXT PROGRAM</title>
+</head>
+
+<body>
+    <div style="margin-top: 200px;" align="center">
+        <p></p>
+    </div>
+    <script>
+        var text = document.querySelector('p')
+
+        var font = 5;
+        var flag = 0;
+
+        function inc() {
+            font++;
+            text.style.fontSize = font + "pt";
+            text.style.color = "red";
+            text.textContent = "TEXT-GROWING:" + font + "pt";
+            if (font == 50) {
+                flag = 1;
+            }
+        }
+
+        function dec() {
+            font--;
+            text.style.fontSize = font + "pt";
+            text.style.color = "blue";
+            text.textContent = "TEXT-SHRINKING:" + font + "pt";
+            if (font == 5) {
+                flag = 0;
+            }
+
+        }
+
+
+        var time = setInterval(function() {
+            if (flag == 1) {
+                dec();
+            }
+            if (flag == 0) {
+                inc();
+            }
+        }, 100);
+    </script>
+
+</body>
+
+</html>

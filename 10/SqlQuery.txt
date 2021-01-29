@@ -1,0 +1,20 @@
+127.0.0.1/weblab/student/		http://localhost/phpmyadmin/tbl_structure.php?db=weblab&table=student
+
+
+create database weblab;
+
+use weblab;
+
+create table student(uusn varchar(10),
+name varchar(20),
+address varchar(20));
+
+insert into student values('4su17cs023','Harshitha k','Mangalore');
+
+insert into student values('4su17cs023','Harshitha k','Mangalore');
+
+insert into student values('4su17cs089','Vandana','Mysore');
+
+insert into student values('4su17cs043','Darshan','Mandya');
+
+insert into student values('4su17cs023','Harshitha k','Mangalore');

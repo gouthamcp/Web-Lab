@@ -1,0 +1,39 @@
+<?xml-stylesheet type="text/css" href="StudentInfo_5.css"?>
+<!DOCTYPE HTML>
+<html>
+<head>
+<h1> STUDENT DESCRIPTION</h1>
+</head>
+
+<students>
+
+<student>
+<usn>USN:4SU17CS001</usn>
+<name>NAME:Amulya</name>
+<college>COLLEGE:SDMIT</college>
+<branch>BRANCH:CSE</branch>
+<year>YEAR:2017</year>
+<email>EMAIL:amulya@gmail.com</email>
+</student>
+
+<student>
+<usn>USN:4SU17CS002</usn>
+<name>NAME:Bin</name>
+<college>COLLEGE:SDMIT</college>
+<branch>BRANCH:CSE</branch>
+<year>YEAR:2017</year>
+<email>EMAIL:bin@gmail.com</email>
+</student>
+
+<student>
+<usn>USN:4SU17CS023</usn>
+<name>NAME:Harshitha k</name>
+<college>COLLEGE:SDMIT</college>
+<branch>BRANCH:CSE</branch>
+<year>YEAR:2017</year>
+<email>EMAIL:divya@gmail.com</email>
+</student>
+
+</students>
+
+</html>
